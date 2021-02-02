@@ -46,8 +46,10 @@ Sample API POST request on Windows:
 The scripts used for k6 load testing are provided in the repository. Two types of tests were performed: POST and GET.
 Load testing for POST requests randomly generates the “id” and uses the information provided in the example to complete the remaining fields:
 * File name: k6_load_testing_post.js
+
 Load testing for GET requests:
 * File name: k6_load_testing_get.js
+
 The scripts contain adjustable variables such as: the number of virtual users (or VUs), the rate of requests, and the duration of the test.
 
 ## Notes
