@@ -54,3 +54,11 @@ The scripts contain adjustable variables such as: the number of virtual users (o
 
 ## Notes
 Rate limiting was implemented in the nginx.conf but requires further debugging.
+
+    limit_req_zone $binary_remote_addr zone=ip:10m rate=100r/s;
+
+This should create a request zone called "ip" which limits the request rate to 100 requests per second.
+
+    limit_req zone=ip burst=6 nodelay;
+
+This line implements the zone within /api/jobs/trending with an arbitrary burst of 6. During k6 testing it did not limit that endpoint on my end.
