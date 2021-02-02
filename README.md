@@ -1,9 +1,7 @@
 # retailoJobListing
 
 ## Description
-This repository contains a job listing api
-This application uses: Docker, Nodejs, MongoDB, NGINX
-The application has the following functionalities:
+This repository contains a job listing api. This application uses: Docker, Nodejs, MongoDB, NGINX. The application has the following functionalities:
 * POST - used to post new job entries based on the example JSON format provided
 * GET (trending) - returns trending=true job listings sorted by post date, batchwise
 * GET (one by id) - requires id as an input and returns a single job entry
